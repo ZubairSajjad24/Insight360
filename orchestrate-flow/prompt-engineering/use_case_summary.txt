@@ -1,0 +1,16 @@
+USE CASE SUMMARY – Insight360 HR Intelligence System
+
+Insight360 is a multi-agent HR analytics system designed to automate HR audits, discover risks and opportunities, and generate full executive reports with zero manual effort.
+
+Key Capabilities:
+- Automated HR audits using a structured dataset.
+- Workflow-triggered multi-agent analysis.
+- Identification of risks, opportunities, and workforce trends.
+- Department-level breakdown for targeted decision-making.
+- Fully formatted executive HR report.
+
+Business Value:
+Insight360 enables HR teams to streamline analysis, reduce reporting time, and gain data‑driven insights instantly. It improves decision-making, enhances employee wellbeing monitoring, and reveals operational inefficiencies across departments.
+
+Target Users:
+HR managers, People Analytics teams, Data-driven organizations.

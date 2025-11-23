@@ -1,0 +1,12 @@
+STARTER PROMPTS FOR INSIGHT360
+
+1. Run the complete Insight360 HR report.
+2. Generate the full HR audit and insights pipeline.
+3. Perform an HR audit using the dataset and summarize the findings.
+4. Identify the top risks, opportunities, and trends from the HR data.
+5. Give me department-level highlights for the current HR dataset.
+6. Generate a full executive HR summary.
+7. Provide recommended HR actions based on the insights.
+8. Analyze wellbeing trends across departments.
+9. What are the major risk factors in the current HR audit?
+10. Run the full Insight360 pipeline end-to-end.

@@ -1,0 +1,13 @@
+DATA DICTIONARY – HR Mock Dataset
+
+employee_id: Unique identifier for each employee.
+department: Employee department (HR, QA, Operations, Sales, etc.)
+task_overdue_count: Number of overdue tasks assigned to the employee.
+wellbeing_score: A score (1–10) representing employee wellbeing.
+hours_worked: Average daily hours worked by the employee.
+remote_attendance_hours: Logged hours for remote-day attendance.
+overtime_hours: Number of overtime hours (beyond regular working hours).
+job_level: Position level (1 = junior, 5 = senior).
+gender: Male/Female/Other.
+age: Employee age.
+location: Employee’s working location.

@@ -1,0 +1,36 @@
+RISK IDENTIFICATION RULES
+
+1. Task Overdue Risk:
+   - High risk if task_overdue_count >= 3
+   - Moderate risk if task_overdue_count = 2
+   - Low risk if task_overdue_count <= 1
+
+2. Wellbeing Risk:
+   - High risk if wellbeing_score < 4
+   - Moderate risk if wellbeing_score < 5
+   - Good wellbeing if score >= 6
+
+3. Overtime Risk:
+   - High risk if overtime_hours > 3
+   - Moderate risk if overtime_hours = 2–3
+   - Low overtime if overtime_hours < 2
+
+4. Attendance Risk:
+   - Remote attendance hours = 0 → flag for missing logs
+   - Repeated missing logs = high attendance risk
+
+5. Department Risk:
+   - Departments with wellbeing_score < 5 OR
+     average overdue_count > 2 → red-flag department
+
+OPPORTUNITY RULES
+
+1. Low Task Overdue + High Wellbeing = Strong opportunity zone
+2. Increasing average wellbeing over time = Positive trend
+3. Departments with stable overtime < 2 = Efficiency opportunity
+
+TREND RULES
+
+1. Most employees working >9 hours/day → workload pressure trend
+2. Wellbeing variation between departments > 2 points → inconsistency trend
+3. Rising remote attendance gaps → monitoring trend
