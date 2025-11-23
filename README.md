@@ -1,36 +1,52 @@
-# Insight360 – Autonomous HR Audit & Opportunity Generator
-Built for the IBM Watsonx Orchestrate × Lablab Agentic AI Hackathon.
-
-## Overview
-Insight360 is a multi-agent HR intelligence system that audits HR activity logs
-(attendance, wellbeing, and training data) to generate actionable insights for managers.
-
-## Features
-- Automated HR data summarization
-- Burnout & absenteeism risk detection
-- Training compliance insights
-- Prioritized recommendations
-- Multi-agent orchestration using IBM Watsonx Orchestrate
-
-## Architecture
-1. Audit Agent → summarization
-2. Opportunity Agent → pattern detection
-3. Reporting Agent → actionable insight generation
-
-## Demo
-Live Demo: <INSERT YOUR LINK HERE>
-
-## Tech Stack
-- IBM Watsonx Orchestrate
-- Watsonx LLM
-- JSON structured outputs
-
-## Files
-- orchestrate-flow/flow.json
-- prompts/
-- sample-logs/
-- demo screenshots
-- pitch video (MP4)
-
-## Author
-Zubair Sajjad
+{
+  "name": "Insight360 Multi-Agent HR Intelligence Flow",
+  "description": "Workflow representation of the three-agent orchestration running inside IBM watsonx Orchestrate.",
+  "version": "1.0",
+  "data_sources": [
+    "Attendance Logs",
+    "Wellbeing Records",
+    "Training Data",
+    "Performance Notes"
+  ],
+  "agents": [
+    {
+      "id": "audit_agent",
+      "name": "Audit Agent",
+      "receives": [
+        "Attendance Logs",
+        "Wellbeing Records",
+        "Training Data",
+        "Performance Notes"
+      ],
+      "produces": ["audit_summary"]
+    },
+    {
+      "id": "opportunity_agent",
+      "name": "Opportunity Discovery Agent",
+      "receives": ["audit_summary"],
+      "produces": ["opportunity_recommendations"]
+    },
+    {
+      "id": "reporting_agent",
+      "name": "Reporting Agent",
+      "receives": ["opportunity_recommendations"],
+      "produces": [
+        "actionable_insights",
+        "prioritized_recommendations",
+        "manager_notifications"
+      ]
+    }
+  ],
+  "workflow": [
+    {
+      "step": 1,
+      "from": "audit_agent",
+      "to": "opportunity_agent"
+    },
+    {
+      "step": 2,
+      "from": "opportunity_agent",
+      "to": "reporting_agent"
+    }
+  ]
+}
